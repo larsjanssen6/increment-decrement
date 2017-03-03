@@ -1,5 +1,7 @@
 # Sort rows increment and decrement very easily.
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
 This package allows you to sort your rows very easy. You can play with the
 rows in a lot of ways. 
 
@@ -114,3 +116,7 @@ to determine if the last and first row can increment/decrement.
 Result in my own project:
 
 ![demo](screenshots/Forum.gif)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
