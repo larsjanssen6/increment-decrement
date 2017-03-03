@@ -53,7 +53,6 @@ You can publish the config-file with:
 
 ```$xslt
 php artisan vendor:publish --provider="LarsJanssen\IncrementDecrement\IncrementDecrementServiceProvider" --tag="config"
-
 ```
 
 This is the contents of the published config file:
@@ -109,9 +108,9 @@ public function increment(Forum $forum)
 .....
 ```
 
-The ```first_one_can_increment and last_one_can_decrement``` can be set in the config file
+The ```first_one_can_increment``` and ```last_one_can_decrement``` can be set in the config file
 to determine if the last and first row can increment/decrement.
 
 Result in my own project:
 
-![demo](Forum.gif)
+![demo](screenshots/Forum.gif)
