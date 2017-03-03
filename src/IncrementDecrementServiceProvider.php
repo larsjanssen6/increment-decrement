@@ -14,11 +14,11 @@ class IncrementDecrementServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-	    $this->publishes([
-		    __DIR__.'/../config/increment-decrement.php' => config_path('increment-decrement.php'),
-	    ], 'config');
+        $this->publishes([
+            __DIR__.'/../config/increment-decrement.php' => config_path('increment-decrement.php'),
+        ], 'config');
 
-	    $this->mergeConfigFrom(__DIR__.'/../config/increment-decrement.php', 'increment-decrement');
+        $this->mergeConfigFrom(__DIR__.'/../config/increment-decrement.php', 'increment-decrement');
     }
 
     /**
@@ -28,8 +28,8 @@ class IncrementDecrementServiceProvider extends ServiceProvider
      */
     public function register()
     {
-	    $this->app->bind('order', function() {
-		    return new Order(new OrderRepository());
-	    });
+        $this->app->bind('order', function () {
+            return new Order(new OrderRepository());
+        });
     }
 }
