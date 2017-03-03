@@ -1,6 +1,9 @@
-# Sort rows increment and decrement very easily.
+# Laravel 5.4 sorting rows like a boss
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![StyleCI](https://styleci.io/repos/83806754)](https://styleci.io/repos/83806754)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/badges/build.png?b=master)](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/build-status/master)
 
 This package allows you to sort your rows very easy. You can play with the
 rows in a lot of ways. 
@@ -120,6 +123,12 @@ to determine if the last and first row can increment/decrement.
 Result in my own project:
 
 ![demo](screenshots/Forum.gif)
+
+# Require
+
+Laravel 5.4 >
+
+Php 7.0 >
 
 ## Contribute
 
