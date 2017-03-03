@@ -114,4 +114,4 @@ to determine if the last and first row can increment/decrement.
 
 Result in my own project:
 
-<iframe src="//giphy.com/embed/l4FGx3NGo5rtbYl56" width="480" height="248" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/l4FGx3NGo5rtbYl56">via GIPHY</a></p>
+[Screenshot](Forum.gif)
