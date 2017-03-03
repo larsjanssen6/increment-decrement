@@ -5,6 +5,8 @@
 This package allows you to sort your rows very easy. You can play with the
 rows in a lot of ways. 
 
+Example:
+
 ![demo](screenshots/Sort.gif)
 
 Once installed you can do the following:
@@ -118,6 +120,10 @@ to determine if the last and first row can increment/decrement.
 Result in my own project:
 
 ![demo](screenshots/Forum.gif)
+
+## Contribute
+
+I would love to hear your ideas to improve my code style and conventions. Feel free to contribute.
 
 ## License
 
