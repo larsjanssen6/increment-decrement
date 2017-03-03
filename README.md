@@ -5,7 +5,7 @@
 This package allows you to sort your rows very easy. You can play with the
 rows in a lot of ways. 
 
-![demo](screenshots/Sorting.gif)
+![demo](screenshots/Sort.gif)
 
 Once installed you can do the following:
 
