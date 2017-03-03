@@ -1,0 +1,38 @@
+{
+  "name": "larsjanssen6/increment-decrement",
+  "description": "Simple ways of incrementing/decrementing and sorting rows",
+  "keywords": [
+    "Lars Janssen",
+    "IncreDecre",
+    "Increment",
+    "Decrement",
+    "Laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lars Janssen",
+      "email": "larsjanssen64@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LarsJanssen\\IncrementDecrement\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LarsJanssen\\IncrementDecrement\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
