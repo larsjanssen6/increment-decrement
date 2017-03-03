@@ -114,4 +114,4 @@ to determine if the last and first row can increment/decrement.
 
 Result in my own project:
 
-[Screenshot](Forum.gif)
+![demo](Forum.gif)
