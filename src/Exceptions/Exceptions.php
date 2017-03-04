@@ -12,7 +12,7 @@ class Exceptions extends Exception
      *
      * @return static
      */
-    public static function couldNotFindColumn(Model $model)
+    public static function columnNotFound(Model $model)
     {
         return new static("Could not find specified column on table `{$model->getTable()}`.");
     }
@@ -23,5 +23,21 @@ class Exceptions extends Exception
     public static function columnNotSet()
     {
         return new static('Column not set in increment-decrement config file.');
+    }
+
+    /**
+     * @return static
+     */
+    public static function numberUnValid($number)
+    {
+        return new static("Value `{$number}` is not a number.");
+    }
+
+    /**
+     * @return static
+     */
+    public static function numberNotPositive($number)
+    {
+        return new static("Value `{$number}` must be positive.");
     }
 }
