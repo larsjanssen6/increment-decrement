@@ -1,4 +1,5 @@
 <?php
+
 namespace LarsJanssen\IncrementDecrement\Test\core;
 
 use LarsJanssen\IncrementDecrement\Test\TestCase;
