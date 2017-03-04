@@ -2,8 +2,8 @@
 
 namespace LarsJanssen\IncrementDecrement;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Eloquent\Model;
 use LarsJanssen\IncrementDecrement\Exceptions\Exceptions;
 
 trait HelperTrait
@@ -22,9 +22,29 @@ trait HelperTrait
                 return true;
             }
 
-            throw Exceptions::couldNotFindColumn($model);
+            throw Exceptions::columnNotFound($model);
         }
 
         throw Exceptions::columnNotSet();
+    }
+
+    /**
+     * @param $index
+     *
+     * @throws Exceptions
+     *
+     * @return bool
+     */
+    public function isValidIndex($index)
+    {
+        if(is_numeric($index)) {
+            if($index > 0) {
+                return true;
+            }
+
+            Exceptions::numberNotPositive($index);
+        }
+
+        Exceptions::numberUnValid($index);
     }
 }
