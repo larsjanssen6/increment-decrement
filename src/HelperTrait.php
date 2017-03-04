@@ -2,8 +2,8 @@
 
 namespace LarsJanssen\IncrementDecrement;
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Schema;
 use LarsJanssen\IncrementDecrement\Exceptions\Exceptions;
 
 trait HelperTrait
@@ -37,8 +37,8 @@ trait HelperTrait
      */
     public function isValidIndex($index)
     {
-        if(is_numeric($index)) {
-            if($index > 0) {
+        if (is_numeric($index)) {
+            if ($index > 0) {
                 return true;
             }
 
