@@ -100,7 +100,7 @@ class OrderRepository implements OrderRepositoryInterface
      */
     public function toMiddle(Model $model)
     {
-		$middle = number_format($this->count($model) / 2);
+        $middle = number_format($this->count($model) / 2);
         $between = [$model->{$this->column}, $middle];
 
         if ($model->{$this->column} != $middle) {
@@ -126,6 +126,7 @@ class OrderRepository implements OrderRepositoryInterface
     /**
      * @param Model $model1
      * @param Model $model2
+     *
      * @return bool
      */
     public function switchModels(Model $model1, Model $model2)
@@ -144,6 +145,7 @@ class OrderRepository implements OrderRepositoryInterface
      * @param Model $model
      * @param $index1
      * @param $index2
+     *
      * @return bool
      */
     public function switchIndexes(Model $model, $index1, $index2)

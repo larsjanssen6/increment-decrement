@@ -1,4 +1,5 @@
 <?php
+
 namespace LarsJanssen\IncrementDecrement\Test;
 
 use Illuminate\Database\Eloquent\Model;
