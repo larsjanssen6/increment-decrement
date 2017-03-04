@@ -5,7 +5,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/badges/build.png?b=master)](https://scrutinizer-ci.com/g/larsjanssen6/increment-decrement/build-status/master)
 
-This package allows you to sort your rows very easy. You can play with the
+This Laravel >=5.4 package allows you to sort your rows very easy. You can play with the
 rows in a lot of ways. 
 
 Example:
@@ -20,6 +20,8 @@ Order::decrement($model);
 Order::toFirst($model);
 Order::toLast($model);
 Order::toMiddle($model);
+Order::switchModels($model1, $model2);
+Order::switchIndexes($model, $index1, $index2);
 ```
  
  The model (table) you want to sort needs a sort column. You can 
@@ -126,9 +128,17 @@ Result in my own project:
 
 # Require
 
-Laravel 5.4 >
+Laravel 5.4 >=
 
-Php 7.0 >
+Php 7.0 >=
+
+## Testing
+
+You can run the tests with:
+
+```bash
+vendor/bin/phpunit
+```
 
 ## Contribute
 
