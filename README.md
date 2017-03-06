@@ -128,7 +128,7 @@ Do not forget to increment the order column (or what you have specified in the c
 return Forum::create([
     'name'          => $request->name,
     'description'   => $request->description,
-    'order'         => Forum::count() +1
+    'order'         => Forum::all()->max('order') + 1
 ]);
 ```
 
