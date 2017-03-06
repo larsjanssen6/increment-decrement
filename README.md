@@ -20,6 +20,7 @@ Order::decrement($model);
 Order::toFirst($model);
 Order::toLast($model);
 Order::toMiddle($model);
+Order::delete($model);
 Order::switchModels($model1, $model2);
 Order::switchIndexes($model, $index1, $index2);
 ```
