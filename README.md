@@ -122,6 +122,16 @@ public function increment(Forum $forum)
 The ```first_one_can_increment``` and ```last_one_can_decrement``` can be set in the config file
 to determine if the last and first row can increment/decrement.
 
+Do not forget to increment the order column (or what you have specified in the config file) when you create a new record. For example:
+
+```
+return Forum::create([
+    'name'          => $request->name,
+    'description'   => $request->description,
+    'order'         => Forum::count() +1
+]);
+```
+
 Result in my own project:
 
 ![demo](screenshots/Forum.gif)
