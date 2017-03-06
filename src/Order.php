@@ -42,9 +42,9 @@ class Order
                     return false;
                 }
             }
-        }
 
-        return $this->orderInfo->increment($model);
+            return $this->orderInfo->increment($model);
+        }
     }
 
     /**
@@ -60,9 +60,21 @@ class Order
                     return false;
                 }
             }
-        }
 
-        return $this->orderInfo->decrement($model);
+            return $this->orderInfo->decrement($model);
+        }
+    }
+
+    /**
+     * @param Model $model
+     *
+     * @return mixed
+     */
+    public function delete(Model $model)
+    {
+        if ($this->isValidModel($model)) {
+            return $this->orderInfo->delete($model);
+        }
     }
 
     /**

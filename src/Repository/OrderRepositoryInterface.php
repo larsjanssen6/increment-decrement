@@ -25,6 +25,13 @@ interface OrderRepositoryInterface
      *
      * @return mixed
      */
+    public function delete(Model $model);
+
+    /**
+     * @param Model $model
+     *
+     * @return mixed
+     */
     public function toFirst(Model $model);
 
     /**

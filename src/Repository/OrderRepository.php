@@ -55,6 +55,21 @@ class OrderRepository implements OrderRepositoryInterface
 
     /**
      * @param Model $model
+     * @return bool
+     */
+    public function delete(Model $model)
+    {
+        $toDecrement = $model::where($this->column, '>',  $model->{$this->column})->get();
+        if(count($toDecrement)) {
+            $toDecrement->each->decrement($this->column);
+            true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param Model $model
      *
      * @return bool
      */
